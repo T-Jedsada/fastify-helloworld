@@ -5,9 +5,5 @@ module.exports = function (fastify, opts, next) {
     reply.send('this is an example')
   })
 
-  fastify.get('/helloworld', function (request, reply) {
-    reply.send('Hello World')
-  })
-
   next()
 }
