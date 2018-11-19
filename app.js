@@ -3,7 +3,7 @@
 const path = require('path')
 const AutoLoad = require('fastify-autoload')
 
-module.exports = function (fastify, opts, next) {
+module.exports = (fastify, opts, next) => {
 
   fastify.register(require('fastify-cors'))
 
